@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+        <div class="output"><h2 id="output_res"></h2>
+        </div>
+
+        <div class="allnumbers">
+            <table>
+                <tbody>
+                <tr>
+                    <td colspan="2" class="color" id="delete_all"><button style="width:100%" onclick="clearAll()"><i class="fa-solid fa-trash"></i></button></i></td>
+                    <td class="color" id="delete_single"><button onclick="Delete()"><i class="fa-solid fa-delete-left"></i></button></i></td>
+                    <td class="color" id="divide"><button onclick="getNum('/')"><i class="fa-solid fa-divide"></i></button></td> 
+                </tr>
+                
+                <tr>
+                    <td id="num_seven"><button onclick="getNum('7')">7</button></td>
+                    <td id="num_eight"><button onclick="getNum('8')">8</button></td>
+                    <td id="num_nine"><button onclick="getNum('9')">9</button></td>
+                    <td class="color" id="multiply"><button onclick="getNum('*')"><i class="fa-solid fa-xmark"></i></button></td>
+                </tr>
+                <tr>
+                    <td id="num_four"><button onclick="getNum('4')">4</button></td>
+                    <td id="num_five"><button onclick="getNum('5')">5</button></td>
+                    <td id="num_six"><button onclick="getNum('6')">6</button></td>
+                    <td class="color" id="minus"><button onclick="getNum('-')"><i class="fa-solid fa-minus"></i></button></td>
+                </tr>
+                <tr>
+                    <td id="num_one"><button onclick="getNum('1')">1</button></td>
+                    <td id="num_two"><button onclick="getNum('2')">2</button></td>
+                    <td id="num_three"><button onclick="getNum('3')">3</button></td>
+                    <td class="color" id="plus"><button onclick="getNum('+')"><i class="fa-regular fa-plus"></i></button></td>
+                </tr>
+                <tr>
+                    <td id="dot"><button onclick="getNum('.')">.</button></td>
+                    <td id="num_zero"><button onclick="getNum('0')">0</button></td>
+                    
+                    <td colspan="2" class="color" id="equal_to"><button style="width:100%" onclick="Output()"><i class="fa-solid fa-equals"></i></button></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
